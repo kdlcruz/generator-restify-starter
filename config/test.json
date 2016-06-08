@@ -1,0 +1,13 @@
+{
+	"server": {
+		"name": "litrato-manager",
+		"port": 9001
+	},
+	"mongodb": {
+		"username": "",
+		"password": "",
+		"host": "localhost",
+		"port": "27017",
+		"database": "litrato-manager"
+	}
+}

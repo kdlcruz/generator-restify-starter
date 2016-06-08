@@ -1,0 +1,51 @@
+{
+  "name": "litrato-manager",
+  "version": "1.0.0",
+  "description": "An image management system that let's you upload and retrieve images",
+  "main": "server.js",
+  "dependencies": {
+    "config": "^1.20.3",
+    "mongoose": "^4.4.19",
+    "require": "^2.4.20",
+    "restify": "^4.0.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-exec": "^2.1.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-nodemon": "^2.0.7",
+    "gulp-postmortem": "^1.0.5",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "mocha": "^2.5.3",
+    "restify-http-log": "0.0.1",
+    "shelljs": "^0.7.0",
+    "supertest": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdlcruz/litrato-manager.git"
+  },
+  "keywords": [
+    "image",
+    "manager",
+    "asset",
+    "manager",
+    "for",
+    "image"
+  ],
+  "author": "Kevin Jay Dela Cruz <kj_delacruz28@yahoo.com> (https://github.com/kdlcruz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kdlcruz/litrato-manager/issues"
+  },
+  "homepage": "https://github.com/kdlcruz/litrato-manager#readme"
+}

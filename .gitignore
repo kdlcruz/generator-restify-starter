@@ -1,0 +1,4 @@
+node_modules/
+log/
+config/development.json
+config/production.json
