@@ -1,4 +1,4 @@
-# Restify Starter
+# Generator Restify Starter
 
 A boilerplate setup for building Node.js RESTful API using Restify
 

@@ -1,13 +1,14 @@
 {
-  "name": "litrato-manager",
+  "name": "generator-restifty-starter",
   "version": "1.0.0",
-  "description": "An image management system that let's you upload and retrieve images",
+  "description": "A boilerplate setup for building Node.js RESTful API using Restify",
   "main": "server.js",
   "dependencies": {
     "config": "^1.20.3",
     "mongoose": "^4.4.19",
     "require": "^2.4.20",
-    "restify": "^4.0.4"
+    "restify": "^4.0.4",
+    "yeoman-generator": "^0.23.4"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -32,20 +33,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kdlcruz/litrato-manager.git"
+    "url": "git+https://github.com/kdlcruz/generator-restifty-starter.git"
   },
   "keywords": [
-    "image",
-    "manager",
-    "asset",
-    "manager",
-    "for",
-    "image"
+    "yeoman-generator"
   ],
   "author": "Kevin Jay Dela Cruz <kj_delacruz28@yahoo.com> (https://github.com/kdlcruz)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kdlcruz/litrato-manager/issues"
+    "url": "https://github.com/kdlcruz/generator-restifty-starter/issues"
   },
-  "homepage": "https://github.com/kdlcruz/litrato-manager#readme"
+  "homepage": "https://github.com/kdlcruz/generator-restifty-starter#readme"
 }
