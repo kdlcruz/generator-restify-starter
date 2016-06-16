@@ -26,6 +26,17 @@ $> npm install
 $> gulp
 ````
 
+## Initial Routes
+
+```
+// Routes
+server.get('/books', booksController.index);
+server.get('/books/:isbn', booksController.getBook);
+server.post('/books', booksController.addBook);
+server.del('/books', booksController.deleteBook);
+server.put('/books/:isbn', booksController.updateBook);
+```
+
 ## Tests
 **(a)** to run test located at **/project/tests/**
 
@@ -43,3 +54,8 @@ $> gulp lint
 
 
 MIT
+
+## TODO
+
+- Create a tutorial on how to add routes, models and controllers
+- Implement in Yoeman
