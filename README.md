@@ -7,21 +7,20 @@ A boilerplate setup for building Node.js RESTful API using Restify
 There are several ways you can use this boilerplate.
 
 
-### 1. Download
+##### 1. Download
 **(a)** Yoeman (ongoing)
 
 **OR**
 
 **(b)** Download the repo ([link](https://github.com/kdlcruz/restify-starter/archive/master.zip)) then unzip to desired project location.
 
-### 2. Build
-
+##### 2. Build
 ````
 $> cd /path/to/project
 $> npm install
 ````
 
-### 3. Run
+##### 3. Run
 
 ````
 $> gulp
