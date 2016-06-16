@@ -1,16 +1,16 @@
 
-/*!
+/*
  * Module dependencies
  */
 
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose'),
+	Schema = mongoose.Schema;
 
 /**
- * User schema
+ * Book schema
  */
 
-var BookSchema = new Schema({
+const BookSchema = new Schema({
   name: { 
   	type: String, 
   	default: '' 
@@ -22,10 +22,6 @@ var BookSchema = new Schema({
   }
 });
 
-/**
- * Register
- */
-
-var Book = mongoose.model('Book', BookSchema);
+let Book = mongoose.model('Book', BookSchema);
 
 module.exports = Book

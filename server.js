@@ -21,12 +21,13 @@ server.pre(http_log());
 server.use(restify.bodyParser({ mapParams: false }));
 
 // MongoDb Connection
-var options = { server: { socketOptions: { keepAlive: 1 } } };
-if (mongoDbConfig.username && mongoDbConfig.password) {
-	mongoose.connect('mongodb://' + mongoDbConfig.username + ':' + mongoDbConfig.password + '@' + mongoDbConfig.host + ':' + mongoDbConfig.port + '/' + mongoDbConfig.database, options);	
-} else {
-	mongoose.connect('mongodb://' + mongoDbConfig.host + ':' + mongoDbConfig.port + '/' + mongoDbConfig.database, options);	
-}
+let options = { server: { socketOptions: { keepAlive: 1 } } },
+	connection = `mongodb://${mongoDbConfig.host}:${mongoDbConfig.port}/${mongoDbConfig.database}`;
+
+if (mongoDbConfig.username && mongoDbConfig.password) {	
+	connection = `mongodb://${mongoDbConfig.username}:${mongoDbConfig.password}@${mongoDbConfig.host}:${mongoDbConfig.port}/${mongoDbConfig.database}`;
+} 
+mongoose.connect(connection, options)
 
 // Routes
 server.get('/books', booksController.index);
@@ -35,6 +36,6 @@ server.post('/books', booksController.addBook);
 server.del('/books', booksController.deleteBook);
 server.put('/books/:isbn', booksController.updateBook);
 
-server.listen(serverConfig.port, function() {
+server.listen(serverConfig.port, () => {
   console.log('%s listening at %s', serverConfig.name, serverConfig.port);
 });

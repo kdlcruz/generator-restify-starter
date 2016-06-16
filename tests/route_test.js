@@ -14,10 +14,10 @@ const assert = require('chai').assert,
  * Test Uber Class
  */
 
-var server = supertest.agent('http://localhost:' + serverConfig.port);
+let server = supertest.agent('http://localhost:' + serverConfig.port);
 
 describe('Routing Test', () => {
-	it('Add book', (done) => {
+	it('Add book', done => {
 
 		let payload = {
 			name: 'Kevin book of testing',
@@ -37,7 +37,7 @@ describe('Routing Test', () => {
 			});
   	});
 
-  	it('View books', (done) => {
+  	it('View books', done => {
 		server
 			.get('/books')
 			.expect("Content-type",/json/)
@@ -49,7 +49,7 @@ describe('Routing Test', () => {
 			});
   	});
 
-  	it('View book', (done) => {
+  	it('View book', done => {
   		let payload = {
 			name: 'Kevin book of testing',
 			isbn: 1
@@ -66,7 +66,7 @@ describe('Routing Test', () => {
 			});
   	});
 
-  	it('Update book', (done) => {
+  	it('Update book', done => {
 
 		let payload = {
 			name: 'Kevin book of testing update',
@@ -85,7 +85,7 @@ describe('Routing Test', () => {
 			});
   	});
 
-  	it('Delete book', (done) => {
+  	it('Delete book', done => {
 
 		let payload = {
 			isbn: 1
